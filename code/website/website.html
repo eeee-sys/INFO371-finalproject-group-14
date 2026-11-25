@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Merchant portal</title>
+  <style>
+    * { box-sizing: border-box; }
+    :root { font-family: system-ui, sans-serif; color: #23372b; background: #faf8f1; }
+    body, h1, h2, p { margin: 0; }
+    button, a { font: inherit; color: inherit; }
+    button { border: 0; background: transparent; cursor: pointer; }
+    button:focus-visible, a:focus-visible, .rail:focus-visible { outline: 2px solid #b56c43; outline-offset: 4px; }
+    .layout { display: grid; grid-template-columns: 185px minmax(0, 1fr); min-height: 100vh; }
+    aside { padding: 28px 15px; background: #244135; color: #fff8e9; }
+    aside strong { display: block; padding: 0 12px; margin-bottom: 25px; font-size: 16px; }
+    nav { display: flex; flex-direction: column; gap: 5px; }
+    nav a { padding: 10px 12px; border-radius: 6px; text-decoration: none; font-size: 14px; }
+    nav a:hover, nav a[aria-current] { background: #3b5b49; }
+    main { min-width: 0; padding: clamp(22px, 4vw, 52px); }
+    .delivery { display: flex; flex-wrap: wrap; align-items: center; gap: 13px 24px; margin-bottom: 39px; }
+    .delivery p { font-size: 15px; font-weight: 600; }
+    .publish { margin-left: auto; padding: 10px 15px; background: #285d46; border-radius: 7px; color: white; }
+    .publish:disabled { background: #e2ebe1; color: #28583e; cursor: default; }
+    .content { display: grid; grid-template-columns: minmax(0, 1fr) minmax(250px, 1fr); gap: clamp(26px, 5vw, 70px); align-items: start; }
+    h1 { font-size: clamp(24px, 3vw, 34px); letter-spacing: -.04em; }
+    h2 { font: 600 clamp(25px, 3.2vw, 42px)/1.05 Georgia, serif; letter-spacing: -.035em; }
+    .ranked { display: grid; gap: 8px; margin: 18px 0 0; padding: 0; list-style: none; }
+    .row {
+      display: grid; grid-template-columns: 22px 64px minmax(0, 1fr);
+      align-items: center; gap: 11px; width: 100%; padding: 5px 0; text-align: left;
+    }
+    .row:hover strong, .product:hover strong { color: #a34d33; }
+    .photo { background: #eae2d7 url("catalogue.png") 0 0 / 200% 200%; border-radius: 6px; }
+    .jeans { background-position: right top; }
+    .shirt { background-position: left bottom; }
+    .sweatshirt { background-position: right bottom; }
+    .thumb { width: 64px; aspect-ratio: 1; }
+    .row strong, .row span:last-child, .product strong, .product span:last-child { display: block; }
+    .why { margin-top: 4px; font-size: 14px; color: #325b45; }
+    .section-head { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+    .arrows { display: flex; gap: 6px; }
+    .arrows button { width: 38px; height: 38px; border-radius: 50%; background: #eaece0; font-size: 19px; }
+    .arrows button:hover, .close:hover { background: #dce6d8; }
+    .rail {
+      display: grid; grid-auto-flow: column; grid-auto-columns: calc((100% - 14px) / 2); gap: 14px;
+      margin-top: 17px; padding-bottom: 12px; overflow-x: auto;
+      scroll-snap-type: x mandatory; overscroll-behavior-inline: contain; scrollbar-color: #8d9b88 transparent;
+    }
+    .product { min-width: 0; padding: 0; text-align: left; scroll-snap-align: start; align-self: start; }
+    .product .photo { display: block; aspect-ratio: 1; margin-bottom: 9px; }
+    dialog { width: min(360px, 90vw); padding: 22px; border: 0; border-radius: 9px; background: #fffdf7; color: inherit; }
+    dialog::backdrop { background: #18382b60; }
+    dialog .photo { aspect-ratio: 1; margin: 12px 0; }
+    dialog form { text-align: right; }
+    .close { padding: 5px 9px; border-radius: 5px; background: #eaece0; }
+    @media (max-width: 720px) {
+      .layout, .content { grid-template-columns: 1fr; }
+      aside { padding: 13px 15px; }
+      aside strong { margin-bottom: 7px; }
+      nav { flex-direction: row; flex-wrap: wrap; }
+      .delivery { margin-bottom: 26px; }
+      .publish { margin-left: 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="layout">
+    <aside>
+      <strong>Merchant portal</strong>
+      <nav aria-label="Sections">
+        <a href="#picks" aria-current="location">Ranked picks</a>
+        <a href="#delivery">Delivery</a>
+        <a href="#for-you">Shopper preview</a>
+      </nav>
+    </aside>
+    <main>
+      <section class="delivery" id="delivery" aria-label="Delivery">
+        <p>Storefront home › For You</p>
+        <p>Signed-in shoppers</p>
+        <button type="button" class="publish" id="publish" aria-live="polite">Publish to storefront</button>
+      </section>
+      <div class="content">
+        <section id="picks">
+          <h1>Ranked picks</h1>
+          <ol id="ranked" class="ranked"></ol>
+        </section>
+        <section id="for-you">
+          <div class="section-head">
+            <h2>For You</h2>
+            <div class="arrows">
+              <button type="button" data-slide="-1" aria-label="Previous products">←</button>
+              <button type="button" data-slide="1" aria-label="Next products">→</button>
+            </div>
+          </div>
+          <div class="rail" id="rail" tabindex="0" aria-label="Shopper recommendations"></div>
+        </section>
+      </div>
+    </main>
+  </div>
+  <dialog id="details" aria-labelledby="item-name">
+    <form method="dialog"><button class="close">Close</button></form>
+    <div id="item-photo" class="photo" role="img"></div>
+    <h2 id="item-name"></h2>
+    <p class="why" id="item-reason"></p>
+  </dialog>
+  <script>
+    const picks = [
+      { name: "Rib-knit cardigan", photo: "cardigan", reason: "You bought this before" },
+      { name: "Straight-leg jeans", photo: "jeans", reason: "Similar to your style" },
+      { name: "Cotton poplin shirt", photo: "shirt", reason: "Popular in your style group" },
+      { name: "Crew-neck sweatshirt", photo: "sweatshirt", reason: "Trending in the last 7 days" },
+    ];
+
+    const ranked = document.querySelector("#ranked");
+    const rail = document.querySelector("#rail");
+    const details = document.querySelector("#details");
+    const publish = document.querySelector("#publish");
+    const copy = (pick) => `<strong>${pick.name}</strong><span class="why">${pick.reason}</span>`;
+
+    ranked.innerHTML = picks.map((pick, index) => `
+      <li><button type="button" class="row" data-pick="${index}">
+        <span>${index + 1}</span><span class="photo thumb ${pick.photo}" aria-hidden="true"></span>
+        <span>${copy(pick)}</span>
+      </button></li>`).join("");
+    rail.innerHTML = picks.map((pick, index) => `
+      <button type="button" class="product" data-pick="${index}">
+        <span class="photo ${pick.photo}" aria-hidden="true"></span>${copy(pick)}
+      </button>`).join("");
+
+    document.querySelectorAll("[data-pick]").forEach((button) => {
+      button.addEventListener("click", () => {
+        const pick = picks[Number(button.dataset.pick)];
+        document.querySelector("#item-name").textContent = pick.name;
+        document.querySelector("#item-reason").textContent = pick.reason;
+        const photo = document.querySelector("#item-photo");
+        photo.className = `photo ${pick.photo}`;
+        photo.setAttribute("aria-label", pick.name);
+        details.showModal();
+      });
+    });
+
+    document.querySelectorAll("[data-slide]").forEach((button) => {
+      button.addEventListener("click", () => rail.scrollBy({
+        left: Number(button.dataset.slide) * (rail.firstElementChild.offsetWidth + 14),
+        behavior: "smooth",
+      }));
+    });
+
+    document.querySelectorAll("nav a").forEach((link) => {
+      link.addEventListener("click", () => {
+        document.querySelector("nav a[aria-current]")?.removeAttribute("aria-current");
+        link.setAttribute("aria-current", "location");
+      });
+    });
+
+    publish.addEventListener("click", () => {
+      publish.textContent = "Published to For You";
+      publish.disabled = true;
+    });
+  </script>
+</body>
+</html>
