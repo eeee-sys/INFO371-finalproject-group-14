@@ -1,0 +1,198 @@
+support,itemsets,size
+0.30507033696618974,Jersey Fancy,1
+0.1932676694719865,Jersey Basic,1
+0.19172477998527043,Trousers,1
+0.16813780232220166,Blouses,1
+0.16433521350224986,Knitwear,1
+0.16265027328375398,"Under-, Nightwear",1
+0.13843390160910699,Dresses Ladies,1
+0.12474676725315408,Accessories,1
+0.09357646590891706,Swimwear,1
+0.0884648249607175,Trousers Denim,1
+0.0746050443307553,Jersey Basic + Jersey Fancy,2
+0.06319727787089992,Jersey Fancy + Trousers,2
+0.06187292797153741,Blouses + Jersey Fancy,2
+0.05996070658219383,Outdoor,1
+0.05605977494793294,Shoes,1
+0.05095250479148045,Jersey Fancy + Knitwear,2
+0.04993192491853937,Skirts,1
+0.049202002696778505,Socks and Tights,1
+0.04808526540540186,Dresses Ladies + Jersey Fancy,2
+0.04695760113465754,Shorts,1
+0.04532511041712651,"Jersey Fancy + Under-, Nightwear",2
+0.04395268180854621,Blouses + Trousers,2
+0.039546923727498615,Jersey Basic + Trousers,2
+0.03594976211965917,Knitwear + Trousers,2
+0.03519580054328941,Accessories + Jersey Fancy,2
+0.03485924957876495,Dressed,1
+0.03433038377736935,Jersey Basic + Knitwear,2
+0.03282683141637692,Blouses + Jersey Basic,2
+0.03256021311980559,"Jersey Basic + Under-, Nightwear",2
+0.03196797083807747,Blouses + Dresses Ladies,2
+0.03114626198962811,Unknown,1
+0.02960337250291204,Blouses + Knitwear,2
+0.028333657500387906,Jersey Fancy + Trousers Denim,2
+0.02768022413420079,Dresses Ladies + Jersey Basic,2
+0.027678038738327256,Dresses Ladies + Trousers,2
+0.025046822106590497,Trousers + Trousers Denim,2
+0.024994372605625648,"Knitwear + Under-, Nightwear",2
+0.024799872372880987,"Trousers + Under-, Nightwear",2
+0.023820815021537076,Jersey Fancy + Swimwear,2
+0.02308870740390268,"Blouses + Under-, Nightwear",2
+0.0228067913362166,Accessories + Jersey Basic,2
+0.020700069714128366,Blouses + Jersey Fancy + Trousers,3
+0.020507754877257242,Jersey Fancy + Shorts,2
+0.020394114291833396,Accessories + Trousers,2
+0.02019087247559459,Accessories + Knitwear,2
+0.020142793766376812,Jersey Basic + Jersey Fancy + Trousers,3
+0.019954849721252756,"Accessories + Under-, Nightwear",2
+0.019712270779290313,Jersey Fancy + Skirts,2
+0.019701343799922638,Special Offers,1
+0.019600815589740004,Accessories + Blouses,2
+0.019487175004316157,Jersey Basic + Trousers Denim,2
+0.018081965457632822,Dresses Ladies + Knitwear,2
+0.01804918451952979,Jersey Fancy + Shoes,2
+0.017872167453773413,Blouses + Jersey Basic + Jersey Fancy,3
+0.017352043235871962,Blouses + Trousers Denim,2
+0.01733893086063075,"Dresses Ladies + Under-, Nightwear",2
+0.016584969284260998,Jersey Basic + Jersey Fancy + Knitwear,3
+0.01653033438742261,Blouses + Dresses Ladies + Jersey Fancy,3
+0.015793855978041144,Jersey Fancy + Outdoor,2
+0.015793855978041144,Knitwear + Trousers Denim,2
+0.015509754514481526,Jersey Fancy + Knitwear + Trousers,3
+0.015339293636345756,Accessories + Dresses Ladies,2
+0.015107641673750992,Jersey Basic + Shorts,2
+0.015101085486130384,Dresses Ladies + Jersey Basic + Jersey Fancy,3
+0.014991815692453609,"Jersey Basic + Jersey Fancy + Under-, Nightwear",3
+0.01480168625145602,Jersey Basic + Swimwear,2
+0.014521955579643475,Shirts,1
+0.01435368009738124,Dresses Ladies + Jersey Fancy + Trousers,3
+0.013938454881409493,Jersey Fancy + Socks and Tights,2
+0.01379858954550322,Blouses + Jersey Fancy + Knitwear,3
+0.01364779723022927,Dresses Ladies + Swimwear,2
+0.013464223976852287,Jersey Fancy + Unknown,2
+0.013256611368866413,"Swimwear + Under-, Nightwear",2
+0.013173566325672063,Blouses + Skirts,2
+0.012889464862112447,Blouses + Swimwear,2
+0.012712447796356071,Shoes + Trousers,2
+0.012712447796356071,"Socks and Tights + Under-, Nightwear",2
+0.012544172314093837,Dresses Ladies + Skirts,2
+0.012093980764145522,Blouses + Shorts,2
+0.012072126805410166,"Trousers Denim + Under-, Nightwear",2
+0.011949744636492177,Skirts + Trousers,2
+0.011783654550103478,Knitwear + Outdoor,2
+0.011707165694529736,Swimwear + Trousers,2
+0.01159789590085296,"Jersey Fancy + Trousers + Under-, Nightwear",3
+0.011552002587508714,Jersey Basic + Skirts,2
+0.01149518229479679,Blouses + Shoes,2
+0.011381541709372944,"Blouses + Jersey Fancy + Under-, Nightwear",3
+0.011374985521752338,Dresses Ladies + Trousers Denim,2
+0.011331277604281627,Blouses + Jersey Basic + Trousers,3
+0.011230749394098995,Dressed + Trousers,2
+0.011138962767410502,Dresses Ladies + Shorts,2
+0.011082142474698579,Outdoor + Trousers,2
+0.01104280534897494,Dresses Ladies + Shoes,2
+0.010968501889274732,Shorts + Trousers,2
+0.010627580133003193,Jersey Fancy + Trousers + Trousers Denim,3
+0.010616653153635516,Blouses + Dresses Ladies + Trousers,3
+0.010572945236164805,Jersey Basic + Shoes,2
+0.010437450692005603,Knitwear + Skirts,2
+0.010413411337396712,"Jersey Fancy + Knitwear + Under-, Nightwear",3
+0.010411225941523177,Jersey Basic + Knitwear + Trousers,3
+0.010387186586914286,Blouses + Knitwear + Trousers,3
+0.010323810106581757,Jersey Basic + Socks and Tights,2
+0.010299770751972866,Accessories + Jersey Basic + Jersey Fancy,3
+0.010076860372872243,Jersey Basic + Jersey Fancy + Trousers Denim,3
+0.009934809641092435,Accessories + Swimwear,2
+0.009779646534071415,Jersey Basic + Outdoor,2
+0.009412500027317448,Dressed + Jersey Fancy,2
+0.009386275276835023,Blouses + Outdoor,2
+0.009298859441893601,Accessories + Jersey Fancy + Trousers,3
+0.009259522316169963,Accessories + Shoes,2
+0.009259522316169963,Accessories + Trousers Denim,2
+0.00914369633487258,Dresses Ladies + Jersey Fancy + Knitwear,3
+0.009093432229781264,Accessories + Blouses + Jersey Fancy,3
+0.009058465895804696,Blouses + Dressed,2
+0.008990718623725094,Knitwear + Socks and Tights,2
+0.008888005017668926,Accessories + Socks and Tights,2
+0.008787476807486292,Knitwear + Shoes,2
+0.008748139681762654,Blouses + Dresses Ladies + Jersey Basic,3
+0.008599532762362238,Dresses Ladies + Jersey Basic + Trousers,3
+0.008571122616006276,Jersey Basic + Jersey Fancy + Shorts,3
+0.008566751824259205,Shorts + Swimwear,2
+0.00854489786552385,Blouses + Jersey Fancy + Trousers Denim,3
+0.008520858510914959,"Dresses Ladies + Jersey Fancy + Under-, Nightwear",3
+0.008245498630849486,Blouses + Jersey Basic + Knitwear,3
+0.008221459276240595,Accessories + Jersey Fancy + Knitwear,3
+0.008190863734011098,"Shoes + Under-, Nightwear",2
+0.008011661272381185,"Jersey Basic + Trousers + Under-, Nightwear",3
+0.00785431276948663,"Jersey Basic + Knitwear + Under-, Nightwear",3
+0.007633587786259542,Jersey Basic + Jersey Fancy + Swimwear,3
+0.007585509077041761,Shorts + Trousers Denim,2
+0.007557098930685799,"Accessories + Jersey Fancy + Under-, Nightwear",3
+0.007511205617341554,Trousers + Unknown,2
+0.007489351658606198,"Blouses + Trousers + Under-, Nightwear",3
+0.007467497699870843,Blouses + Unknown,2
+0.007463126908123772,Socks and Tights + Trousers,2
+0.007406306615411849,Accessories + Outdoor,2
+0.007382267260802958,"Skirts + Under-, Nightwear",2
+0.007356042510320532,Jersey Basic + Trousers + Trousers Denim,3
+0.007163727673449407,Jersey Fancy + Knitwear + Trousers Denim,3
+0.007100351193116877,Blouses + Trousers + Trousers Denim,3
+0.007082868026128593,Blouses + Jersey Fancy + Shorts,3
+0.007080682630255058,Accessories + Dresses Ladies + Jersey Fancy,3
+0.007052272483899096,Blouses + Jersey Fancy + Swimwear,3
+0.0070107499623019215,"Knitwear + Trousers + Under-, Nightwear",3
+0.00700637917055485,Blouses + Jersey Fancy + Skirts,3
+0.006977969024198888,"Blouses + Jersey Basic + Under-, Nightwear",3
+0.006969227440704747,Dresses Ladies + Jersey Fancy + Skirts,3
+0.006927704919107572,"Shorts + Under-, Nightwear",2
+0.0068752554181427195,Dresses Ladies + Jersey Fancy + Swimwear,3
+0.006744131665730589,"Outdoor + Under-, Nightwear",2
+0.006654530434915633,Dresses Ladies + Jersey Fancy + Shorts,3
+0.006547446037112392,Dresses Ladies + Outdoor,2
+0.006466586389791579,Jersey Fancy + Shoes + Trousers,3
+0.006449103222803294,Accessories + Blouses + Trousers,3
+0.0064010245135855135,Jersey Fancy + Special Offers,2
+0.006379170554850158,Jersey Fancy + Skirts + Trousers,3
+0.0063704289713560165,Accessories + Skirts,2
+0.006368243575482481,Jersey Basic + Jersey Fancy + Skirts,3
+0.006346389616747126,Jersey Fancy + Shorts + Trousers,3
+0.006322350262138235,Swimwear + Trousers Denim,2
+0.0063026816992764155,Blouses + Socks and Tights,2
+0.00630049630340288,Dressed + Knitwear,2
+0.006243676010690957,Jersey Fancy + Swimwear + Trousers,3
+0.0062349344271968145,Knitwear + Unknown,2
+0.006206524280840853,Blouses + Dresses Ladies + Knitwear,3
+0.0061737433427378205,Dresses Ladies + Jersey Fancy + Trousers Denim,3
+0.006127850029393574,Knitwear + Trousers + Trousers Denim,3
+0.006123479237646503,Jersey Basic + Unknown,2
+0.006121293841772968,Dresses Ladies + Knitwear + Trousers,3
+0.006012024048096192,Blouses + Jersey Fancy + Shoes,3
+0.005966130734751947,Accessories + Jersey Basic + Trousers,3
+0.005942091380143056,Jersey Basic + Jersey Fancy + Shoes,3
+0.005928979004901843,"Blouses + Knitwear + Under-, Nightwear",3
+0.005861231732822242,Knitwear + Swimwear,2
+0.005841563169960423,Dresses Ladies + Unknown,2
+0.005837192378213352,Dresses Ladies + Jersey Basic + Knitwear,3
+0.005758518126766073,Dressed + Jersey Basic,2
+0.005695141646433543,Shoes + Swimwear,2
+0.005673287687698188,Accessories + Knitwear + Trousers,3
+0.005642692145468691,"Jersey Fancy + Trousers Denim + Under-, Nightwear",3
+0.005616467394986265,Dresses Ladies + Jersey Fancy + Shoes,3
+0.005612096603239193,"Blouses + Dresses Ladies + Under-, Nightwear",3
+0.005607725811492123,Shoes + Trousers Denim,2
+0.00559898422799798,Outdoor + Trousers Denim,2
+0.0055268661641713086,Accessories + Shorts,2
+0.005441635725103424,"Dresses Ladies + Jersey Basic + Under-, Nightwear",3
+0.005382630036517965,Accessories + Jersey Basic + Knitwear,3
+0.005382630036517965,"Accessories + Jersey Basic + Under-, Nightwear",3
+0.0053236243479325065,Skirts + Trousers Denim,2
+0.005321438952058971,"Jersey Fancy + Swimwear + Under-, Nightwear",3
+0.005220910741876337,Blouses + Jersey Basic + Trousers Denim,3
+0.005212169158382195,Accessories + Blouses + Jersey Basic,3
+0.005087601593590671,Jersey Fancy + Outdoor + Trousers,3
+0.005081045405970064,Jersey Basic + Knitwear + Trousers Denim,3
+0.005037337488499354,Jersey Fancy + Knitwear + Outdoor,3
+0.0050089273421433924,"Dresses Ladies + Trousers + Under-, Nightwear",3
+0.0050089273421433924,Jersey Basic + Jersey Fancy + Outdoor,3

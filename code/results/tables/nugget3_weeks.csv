@@ -1,0 +1,61 @@
+cutoff,strategy,first_time,covered
+2019-10-16,last 7 days,8381,786
+2019-10-16,"7-day list, 1 week old",8381,576
+2019-10-16,"7-day list, 2 weeks old",8381,639
+2019-10-16,"7-day list, 4 weeks old",8381,508
+2019-10-16,"7-day list, 8 weeks old",8381,258
+2019-10-16,last 30 days,8381,685
+2019-11-13,last 7 days,7436,752
+2019-11-13,"7-day list, 1 week old",7436,644
+2019-11-13,"7-day list, 2 weeks old",7436,558
+2019-11-13,"7-day list, 4 weeks old",7436,466
+2019-11-13,"7-day list, 8 weeks old",7436,310
+2019-11-13,last 30 days,7436,671
+2019-12-11,last 7 days,8525,893
+2019-12-11,"7-day list, 1 week old",8525,458
+2019-12-11,"7-day list, 2 weeks old",8525,448
+2019-12-11,"7-day list, 4 weeks old",8525,458
+2019-12-11,"7-day list, 8 weeks old",8525,362
+2019-12-11,last 30 days,8525,564
+2020-01-15,last 7 days,8552,686
+2020-01-15,"7-day list, 1 week old",8552,511
+2020-01-15,"7-day list, 2 weeks old",8552,471
+2020-01-15,"7-day list, 4 weeks old",8552,450
+2020-01-15,"7-day list, 8 weeks old",8552,254
+2020-01-15,last 30 days,8552,550
+2020-02-12,last 7 days,8787,761
+2020-02-12,"7-day list, 1 week old",8787,673
+2020-02-12,"7-day list, 2 weeks old",8787,583
+2020-02-12,"7-day list, 4 weeks old",8787,414
+2020-02-12,"7-day list, 8 weeks old",8787,357
+2020-02-12,last 30 days,8787,663
+2020-03-04,last 7 days,11621,820
+2020-03-04,"7-day list, 1 week old",11621,761
+2020-03-04,"7-day list, 2 weeks old",11621,675
+2020-03-04,"7-day list, 4 weeks old",11621,614
+2020-03-04,"7-day list, 8 weeks old",11621,323
+2020-03-04,last 30 days,11621,752
+2020-06-10,last 7 days,11885,920
+2020-06-10,"7-day list, 1 week old",11885,697
+2020-06-10,"7-day list, 2 weeks old",11885,672
+2020-06-10,"7-day list, 4 weeks old",11885,520
+2020-06-10,"7-day list, 8 weeks old",11885,502
+2020-06-10,last 30 days,11885,726
+2020-07-08,last 7 days,11234,777
+2020-07-08,"7-day list, 1 week old",11234,501
+2020-07-08,"7-day list, 2 weeks old",11234,437
+2020-07-08,"7-day list, 4 weeks old",11234,405
+2020-07-08,"7-day list, 8 weeks old",11234,323
+2020-07-08,last 30 days,11234,600
+2020-08-12,last 7 days,10329,771
+2020-08-12,"7-day list, 1 week old",10329,629
+2020-08-12,"7-day list, 2 weeks old",10329,608
+2020-08-12,"7-day list, 4 weeks old",10329,444
+2020-08-12,"7-day list, 8 weeks old",10329,360
+2020-08-12,last 30 days,10329,725
+2020-09-16,last 7 days,8704,957
+2020-09-16,"7-day list, 1 week old",8704,713
+2020-09-16,"7-day list, 2 weeks old",8704,659
+2020-09-16,"7-day list, 4 weeks old",8704,357
+2020-09-16,"7-day list, 8 weeks old",8704,213
+2020-09-16,last 30 days,8704,793

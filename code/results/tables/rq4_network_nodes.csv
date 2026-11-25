@@ -1,0 +1,22 @@
+category,purchases,degree,weighted_degree,community
+Skirts,22848,10,0.353,0
+Blouses,76937,9,0.452,0
+Unknown,14252,9,0.209,0
+Dresses Ladies,63345,6,0.301,0
+Shoes,25652,6,0.156,0
+Special Offers,9015,4,0.089,0
+Knitwear,75197,3,0.063,0
+Shorts,21487,9,0.468,1
+Jersey Fancy,139595,7,0.367,1
+Jersey Basic,88436,3,0.174,1
+Dresses/Skirts girls,1993,1,0.032,1
+Swimwear,42819,1,0.068,1
+Woven/Jersey/Knitted mix Baby,1830,1,0.03,1
+Trousers,87730,8,0.32,2
+Dressed,15951,4,0.139,2
+Trousers Denim,40480,4,0.161,2
+Outdoor,27437,2,0.029,2
+Shirts,6645,2,0.032,2
+Accessories,57082,2,0.068,3
+Socks and Tights,22514,2,0.097,3
+"Under-, Nightwear",74426,1,0.059,3
